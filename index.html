@@ -1,0 +1,46 @@
+<html>
+    <head> 
+        <title> Cost per Month </title>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <label class="labels" for="monthdays">Days in month?</label><br/>
+                <input class="inputs" type="number" id="monthdays" /><br/>
+                <br><br><br>
+                <label class="labels" for="amount">Cost per month?</label><br/>
+                <input class="inputs" type="number" id="amount" /><br/>
+                <br><br><br>
+                <label class="labels" for="days">Days to charge?</label><br/>
+                <input class="inputs" type="number" id="days" /><br/>
+                
+                
+
+                <button id="go">Go!</button>
+            </form>
+            
+            <div id="output"></div>
+
+        </div>
+
+        <script>
+            document.getElementById("go").addEventListener ('click', calculateAmount);
+
+            function calculateAmount(e){
+                e.preventDefault();
+
+                var monthlyAmount = parseInt(document.getElementById("amount").value);
+                var days = parseInt(document.getElementById("days").value);
+                var monthdays = parseInt(document.getElementById("monthdays").value);
+                var finalValue =monthlyAmount / monthdays * days  ; 
+
+                document.getElementById("output").innerHTML = "R " + finalValue.toFixed(2);
+
+            }
+        </script>
+        
+    </body>
+</html>

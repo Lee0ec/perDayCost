@@ -1,0 +1,58 @@
+body{
+    background-color: #000000;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+
+}
+
+.container {
+    width: 100%;
+    padding-top: 4rem;
+
+}
+
+.labels {
+    color: whitesmoke;
+    font-size: 6vw;
+
+}
+
+#go {
+    margin-top: 4rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    width: 50%;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: .5em;
+    
+}
+
+.inputs {
+    background-color: white;
+    width: 80%;
+    border-radius: .5em;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+
+}
+
+#output{
+    font-size: 9vw;
+    margin-top: 3rem;
+}
